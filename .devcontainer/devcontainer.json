@@ -1,5 +1,5 @@
 {
-	"name": "play-with-poetry-devcontainer",
+	"name": "play-with-click-house",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "test-app",
 	"workspaceFolder": "/opt/yijun/code",
