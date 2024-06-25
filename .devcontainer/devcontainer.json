@@ -1,0 +1,27 @@
+{
+	"name": "play-with-poetry-devcontainer",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "test-app",
+	"workspaceFolder": "/opt/yijun/code",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash"
+					}
+				},
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": true,
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+			]
+		}
+	},
+	"postCreateCommand": "poetry install --with dev",
+	"remoteUser": "yijun"
+}
+

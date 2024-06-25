@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["yijun"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+clickhouse-connect = "^0.7.14"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
